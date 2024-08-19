@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const DB = "PASTE_YOUR_URL_INSIDE_THIS_DOUBLE_QUOTES";
+const DB = process.env.MONGO_URI;
 
 mongoose
   .connect(DB)
